@@ -6,7 +6,7 @@ Create your form using JSON.
 
 ```json
 {
-    "id": "contact"
+    "id": "contact",
     "fieldsets": [
         {
             "legend": "Contact",
@@ -35,7 +35,7 @@ Create your form using JSON.
             ]
         }
     ]
-}       
+}      
 ```
 
 A form framework based on [SVELTE](https://svelte.dev/) and [TypeScript](https://www.typescriptlang.org/).

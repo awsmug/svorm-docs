@@ -1,12 +1,6 @@
 # Get started
 
-## Installation
-
-Svorm can be installed by using the node package manager *npm*.
-
-
-
-## Using in HTML
+## HTML integration
 
 1. Add svorm via *npm*
 
@@ -25,22 +19,36 @@ npm i svorm
 
 ```json
 {
-    "id": "test-form",
-    "start": "test-fieldset",
+    "id": "contact",
     "fieldsets": [
         {
-            "id": "test-fieldset",
-            "label": "Test fieldset",
+            "legend": "Contact",
             "fields": [
                 {
-                    "id": "a-textfield",
-                    "label": "A Textfield",
+                    "id": "name",
+                    "label": "Your name",
                     "type": "text"
+                },
+                {
+                    "id": "email",
+                    "label": "Email",
+                    "type": "text",
+                    "validations": [
+                        {
+                            "type": "email",
+                            "error": "Email is not valid."
+                        }
+                    ]
+                },
+                {
+                    "id": "message",
+                    "label": "Message",
+                    "type": "textarea"
                 }
             ]
         }
     ]
-}
+}     
 ```
 
 4. Include JSON config file to your HTML body.
@@ -49,7 +57,7 @@ npm i svorm
 <div data-component="form" data-form="form.json"></div>
 ```
 
-## Using in Svelte
+## Svelte integration
 
 1. Add svorm via *npm* in your svelte project.
 
