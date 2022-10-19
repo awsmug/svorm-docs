@@ -1,4 +1,4 @@
-# JSON Structure
+# JSON Schema
 
 The JSON file allows you to define a form via a json config file.
 

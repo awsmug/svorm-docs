@@ -12,6 +12,9 @@ module.exports = {
         '/',
         ['/get-started/', 'Get Started'],
         ['/json-schema/', 'JSON Schema'],
+        ['/fields/', 'Fields'],
+        ['/conditions/', 'Conditions'],
+        ['/triggers/', 'Triggers']        
     ]
   }
 }

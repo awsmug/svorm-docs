@@ -1,4 +1,4 @@
-# Conditional Logic
+# Conditions
 
 
 Conditionall logic allows you to **show** or **hide** elements depending on content of input fields. 
@@ -7,20 +7,19 @@ Here is an example of a text element which is shown depending on the value of th
 
 ```json
 {
-    "name": "test-form",
-    "start": "conditional-logic",
+    "id": "test-form",
     "fieldsets": [
         {
-            "label": "Conditional Logic",
-            "name": "conditional-logic",
+            "id": "conditional-logic",
+            "label": "Conditional Logic",            
             "fields": [
                 {
-                    "name": "show",
+                    "id": "show",
                     "label": "Show Textfield",
                     "type": "choice-radio",
-                    "choices": [                        
+                    "options": [                        
                         {
-                            "label": "Ja",
+                            "label": "Yes",
                             "value": "yes"
                         },
                         {
@@ -30,7 +29,7 @@ Here is an example of a text element which is shown depending on the value of th
                     ]
                 },
                 {
-                    "name": "my-text",
+                    "id": "my-text",
                     "value": "You can see me!",
                     "type": "headline",
                     "conditions": [
