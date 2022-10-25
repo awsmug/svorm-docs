@@ -19,7 +19,7 @@ An action block is always structured as follows. First, the type of the action i
 }
 ```
 
-## Action Types
+## Types
 
 Actions can be of different types. The following types are predefined:
 

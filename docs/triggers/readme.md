@@ -119,10 +119,10 @@ Triggers can be specified any number of times. Moreover, each trigger can contai
 ]
 ```
 
-## Trigger Conditions
+## Conditions
 
 Conditions are used to determine whether a trigger should be executed. Conditions are always specified as an array. You can see [how conditions work](/conditions/) here.
 
-## Trigger Actions
+## Actions
 Actions are executed if the conditions are met. Actions are always specified as an array. You can see [how actions work](/actions/) here.
 
