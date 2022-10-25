@@ -9,9 +9,9 @@ module.exports = {
       { text: "GitHub", link: "https://github.com/awsmug/svorm" }
     ],
     sidebar: [
-        '/',
-        ['/get-started/', 'Get Started'],
+        ['/', 'Home'],
         ['/overview/', 'Overview'],
+        ['/get-started/', 'Get Started'],        
         ['/fields/', 'Fields'],
         ['/field-types/', 'Field Types'],
         ['/triggers/', 'Triggers'],

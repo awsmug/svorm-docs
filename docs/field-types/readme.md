@@ -124,3 +124,7 @@ Parameters:
 - **classes** (string) Additional CSS classes.
 - **choices** (array) An array of [choices](#choices).
 - **validations** (array) An array with [validations](/SvelteForms/json-structure/validation) which have to be passed.
+
+## Create a Field
+
+You are confident with NPM, JavaScript and Svelte? Then just create your own field. In our documentation we explain step by step how you can create and integrate your own field with Svelte. Of course we are open for new fields in the basic version of Svorm.
