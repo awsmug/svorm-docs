@@ -1,7 +1,5 @@
 # Svorm Documentation
 
-## Svorm - A JSON form builder
-
 Create your form using JSON.
 
 ```json

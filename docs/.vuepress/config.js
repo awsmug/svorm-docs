@@ -11,8 +11,9 @@ module.exports = {
     sidebar: [
         '/',
         ['/get-started/', 'Get Started'],
-        ['/json-schema/', 'JSON Schema'],
+        ['/overview/', 'Overview'],
         ['/fields/', 'Fields'],
+        ['/field-types/', 'Field Types'],
         ['/triggers/', 'Triggers'],
         ['/conditions/', 'Conditions'],
         ['/actions/', 'Actions']        
