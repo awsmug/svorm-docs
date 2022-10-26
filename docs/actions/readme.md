@@ -69,14 +69,13 @@ The callback action executes a callback function. The callback function must be 
 ]
 ```
 
-If yout want to use a callback function, you have to define the callback function before in a script tag. The callback function must be defined before in the global scope.
+If yout want to use a callback function, you have to define the callback function before in a JavaSvript or a svelte component. The callback function must be defined before in the global scope.
 
 ```html
 <script>
-    function myCallback() {
-        console.log("Hello World!");
-    }
-    globalThis.myCallback = myCallback;
+globalThis.myCallback = () => {
+    console.log("Hello World!");
+}
 </script>
 ```
 
@@ -87,20 +86,15 @@ You also can define parameters for the callback function.
     {
         "type": "callback",
         "data": {
-            "callback": "myCallback",
-            "params": [
-                "Hello World!"
-            ]
+            "method": "myCallback",
+            "args": ["Hello", "World"]
         }
     }
 ]
 ```
 
-```html
-<script>
-    function myCallback(message) {
-        console.log(message);
-    }
-    globalThis.myCallback = myCallback;
-</script>
+```js
+globalThis.myCallback = (message1, message2) => {
+    console.log(message1, message2);
+};
 ```
