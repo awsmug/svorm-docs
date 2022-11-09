@@ -14,6 +14,7 @@ module.exports = {
         ['/get-started/', 'Get Started'],        
         ['/fields/', 'Fields'],
         ['/field-types/', 'Field Types'],
+        ['/events/', 'Events'],
         ['/triggers/', 'Triggers'],
         ['/conditions/', 'Conditions'],
         ['/actions/', 'Actions']        
