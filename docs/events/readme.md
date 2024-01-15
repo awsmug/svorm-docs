@@ -36,7 +36,7 @@ Events can be specified any number of times. Moreover, each event contains a tri
 ```json
 "events": [
     {
-        "trigger": "onChange",
+        "trigger": "change",
         "conditions": [
             {
                 "fieldId": "field1",
@@ -52,7 +52,7 @@ Events can be specified any number of times. Moreover, each event contains a tri
         ]            
     },
     {
-        "trigger": "onChange",
+        "trigger": "change",
         "conditions": [
             {
                 "fieldId": "field2",
@@ -68,7 +68,7 @@ Events can be specified any number of times. Moreover, each event contains a tri
         ]            
     },
     {
-        "trigger": "onSubmit",
+        "trigger": "submit",
         "conditions": [
             {
                 "fieldId": "field1",
