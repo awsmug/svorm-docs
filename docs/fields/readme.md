@@ -1,6 +1,6 @@
 # Fields
 
-Fields are the building blocks of a form. They are the elements that the user will interact with. Fields are grouped in fieldsets. A fieldset is a group of fields that are logically related to each other. For example, a fieldset could be a group of fields that are related to the user's personal information.
+Fields are the building blocks of a form. They are the elements that the user will interact with. Fields are grouped in fieldsets.
 
 ## Implementation
 
