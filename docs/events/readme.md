@@ -13,7 +13,7 @@ This is an example of an events section.
 ```json
 "events": [
     {
-        "trigger": "onChange",
+        "trigger": "change",
         "conditions": [
             {
                 "fieldId": "show",
@@ -24,9 +24,7 @@ This is an example of an events section.
         "actions": [
             {
                 "type": "alert",
-                "data": {
-                    "message": ""
-                }
+                "message": "Message to show when the field with id 'show' is set to 'yes'"                
             }
         ]            
     }
@@ -49,9 +47,7 @@ Events can be specified any number of times. Moreover, each event contains a tri
         "actions": [
             {
                 "type": "alert",
-                "data": {
-                    "message": "Executed because field 1 was set to yes."
-                }
+                "message": "Executed because field 1 was set to yes."
             }
         ]            
     },
@@ -67,9 +63,7 @@ Events can be specified any number of times. Moreover, each event contains a tri
         "actions": [
             {
                 "type": "alert",
-                "data": {
-                    "message": "Executed because field 2 was set to yes."
-                }
+                "message": "Executed because field 2 was set to yes."
             }
         ]            
     },
@@ -90,15 +84,11 @@ Events can be specified any number of times. Moreover, each event contains a tri
         "actions": [
             {
                 "type": "alert",
-                "data": {
-                    "message": "Executed because field 1 and field 2 was set to yes."
-                }
+                "message": "Executed because field 1 and field 2 were set to yes."
             },
             {
                 "type": "alert",
-                "data": {
-                    "message": "Just a second alert, because we can."
-                }
+                "message": "Executed because field 1 and field 2 were set to yes."
             }
         ]            
     }
@@ -109,11 +99,11 @@ Events can be specified any number of times. Moreover, each event contains a tri
 
 There are predefined triggers in Svorm. This is a list of all triggers that Svorm provides:
 
-- onInit
-- onChange
-- onSubmit
-- onNext
-- onPrev
+- init
+- change
+- submit
+- next
+- prev
 
 ## Conditions
 
