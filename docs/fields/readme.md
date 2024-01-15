@@ -83,6 +83,48 @@ Validations are used to validate the value of a field. If the user enters the va
     }
 ```
 
+There are predefined validations in Svorm. This is a list of all validations that Svorm provides:
+
+### Simple validations
+
+- **string** - A string wich can nearly contain everything.
+- **letters** - A string wich can only contain letters.
+- **int** - Integer value.
+- **number** - A number value.
+- **email** - A valid email address.
+- **empty** - The value must not be empty.
+- **url** - A valid URL.
+
+### Validations with parameters
+
+An example of a validation with parameters is the **minLength** validation. The validation checks if the length of the string is greater than the value that is specified in the "value" property.
+
+```json
+    {
+        "id": "firstname",
+        "label": "First name",
+        "type": "text",
+        "validations": [
+            {
+                "validation": "minLength",
+                "value": 5,
+                "error": "The first name have to be at least 5 characters long."        
+            }
+        ]
+    }
+```
+
+This is a list of all validations with parameters that Svorm provides:
+
+- **min** - The value must be greater than the value that is specified in the "value" property.
+- **max** - The value must be less than the value that is specified in the "value" property.
+- **minLength** - The length of the string must be greater than the value that is specified in the "value" property.
+- **maxLength** - The length of the string must be less than the value that is specified in the "value" property.
+
+### Validations for specific fields
+
+- **isChecked** - The checkbox must be checked (only for checkboxes).
+
 ## Replacements
 
 Replacements are used to replace the value of a field with another value. If the user enters the value that is specified in the "from" property, the value will be replaced with the value that is specified in the "to" property. You also can specify multiple replacements for a single field.
